@@ -3,6 +3,7 @@ article { grid-area: ruokalista; }
 footer { grid-area: yhteistiedot; }
 .tiedot { grid-area: tiedot; }
 .logo { grid-area: logo; }
+.arvo { grid-area: arvostelu;}
 
 body{
     background-image: url("background.jpg");
@@ -22,7 +23,8 @@ body{
     display: grid;
     grid-template-areas: 
         'otsikko otsikko otsikko otsikko otsikko otsikko'
-        'yhteistiedot yhteistiedot ruokalista ruokalista ruokalista ruokalista';
+        'yhteistiedot yhteistiedot ruokalista ruokalista ruokalista ruokalista'
+        'arvostelu arvostelu arvostelu arvostelu arvostelu arvostelu';
     grid-gap: 10px;
 }
 table,th,td {
@@ -42,8 +44,9 @@ table,th,td {
     aside{
         display: grid;
         grid-template-areas: 
-            'otsikko otsikko otsikko otsikko otsikko otsikko'
-            'yhteistiedot yhteistiedot ruokalista ruokalista ruokalista ruokalista';
+        'otsikko otsikko otsikko otsikko otsikko otsikko'
+        'yhteistiedot yhteistiedot ruokalista ruokalista ruokalista ruokalista'
+        'arvostelu arvostelu arvostelu arvostelu arvostelu arvostelu';
     }
     .main > div,article,footer,header {
         margin-bottom: 10px;
@@ -55,9 +58,6 @@ table,th,td {
         padding: 5px;
     }
 }
-
-
-
 article {
     padding: 20px;
 }
@@ -65,9 +65,12 @@ article {
 footer {
     padding: 20px;
 }
-footer img{
+footer img {
     padding-top: 50px;
 }
-
+.arvo {
+    font-size: 30px;
+    padding: 20px;
+}
 
 
